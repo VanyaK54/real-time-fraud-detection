@@ -1,0 +1,2 @@
+with open("outputs/logs/inference_log.txt", "a") as log:
+    log.write(f"[{timestamp}] Transaction {tx_id} - Score: {score:.4f} - Anomaly: {is_anomaly}\n")
