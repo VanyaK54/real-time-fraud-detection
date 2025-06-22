@@ -1,0 +1,6 @@
+transaction_id,timestamp,user_id,amount,location,device_type
+101,2025-06-02T14:00:01Z,U127,640.20,Edmonton,Mobile
+102,2025-06-02T14:00:02Z,U128,18.00,Ottawa,Web
+103,2025-06-02T14:00:03Z,U129,9250.00,Calgary,ATM
+104,2025-06-02T14:00:04Z,U130,12.50,Toronto,Web
+105,2025-06-02T14:00:05Z,U131,125.00,Montreal,Mobile
