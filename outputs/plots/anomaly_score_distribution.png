@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+from joblib import load
+
+# Load processed data and model
+df = pd.read_csv('data/processed/transactions_processed.csv')
+model = load('models/isolation_forest_model.pkl')
+X = df[['amount_scaled', 'location_code', 'device_type_code']]
+
+# Get anomaly scores
+scores = model.decision_function(X)
+
+# Plot score distribution
+plt.figure(figsize=(10,5))
+plt.hist(scores, bins=50, color='orange')
+plt.title('Anomaly Score Distribution')
+plt.xlabel('Score')
+plt.ylabel('Frequency')
+plt.savefig('outputs/plots/anomaly_score_distribution.png')
