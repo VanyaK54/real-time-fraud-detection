@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Data
+data/raw/
+data/simulation/
+data/processed/
+outputs/logs/
+outputs/plots/
+
+# Models
+models/*.pkl
+
+# Azure
+*.env
+
+# Streamlit
+app/.streamlit/
+
+# Power BI
+*.pbix
+
+# System
+.DS_Store
+Thumbs.db
